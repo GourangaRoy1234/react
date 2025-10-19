@@ -8,11 +8,19 @@ function App() {
   // let counter=5
   const addvalue=()=>{
     console.log("value added",Math.random());
-    counter=counter+1;
+    if(counter<20){
+       counter=counter+1;
+    }
     setCount(counter)
   }
    const decvalue=()=>{
-      counter=counter-1;
+      if(counter<=0){
+        counter=0;
+      }
+      else{
+         counter=counter-1;
+      }
+      
       setCount(counter)
     }
 
