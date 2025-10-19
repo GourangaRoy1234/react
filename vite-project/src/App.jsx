@@ -10,11 +10,11 @@ function App() {
     console.log("value added",Math.random());
     counter=counter+1;
     setCount(counter)
-    const decvalue=()=>{
+  }
+   const decvalue=()=>{
       counter=counter-1;
       setCount(counter)
     }
-  }
 
   return (
     <>
