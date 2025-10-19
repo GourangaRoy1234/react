@@ -10,6 +10,10 @@ function App() {
     console.log("value added",Math.random());
     counter=counter+1;
     setCount(counter)
+    const decvalue=()=>{
+      counter=counter-1;
+      setCount(counter)
+    }
   }
 
   return (
@@ -20,7 +24,7 @@ function App() {
     <button 
     onClick={addvalue}
     >inc</button>
-    <button>dec</button>
+    <button onClick={decvalue}>dec</button>
     </>
   )
 }
